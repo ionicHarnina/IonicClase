@@ -14,5 +14,10 @@
 
 
 <ion-content padding>
-
+  <h1>{{recogida}}</h1>
+  <h1>{{person|json}}</h1>
+  <h1>{{person.nombre}} {{person.edad}}</h1>
+  <h1>{{personD|json}}</h1>
+  <button (click)="openNuevaRoot()">NuevaRoot</button>
+  <button (click)="volverAtras()">Atras</button>
 </ion-content>

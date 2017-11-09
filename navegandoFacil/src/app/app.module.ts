@@ -1,3 +1,4 @@
+import { NuevaRootPage } from './../pages/nueva-root/nueva-root';
 import { SegundaPageModule } from './../pages/segunda/segunda.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -11,7 +12,7 @@ import { HomePage } from '../pages/home/home';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,NuevaRootPage
   ],
   imports: [
     BrowserModule,
@@ -20,8 +21,7 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
-  ],
+    HomePage,NuevaRootPage ],
   providers: [
     StatusBar,
     SplashScreen,
