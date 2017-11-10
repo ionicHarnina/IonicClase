@@ -1,0 +1,7 @@
+<ion-tabs>
+  <!-- <ion-tab [root]="cocheRoot" tabTitle="Coche" tabIcon="information-circle"></ion-tab>
+    <ion-tab [root]="amotoRoot" tabTitle="Amoto" tabIcon="information-circle"></ion-tab>
+    <ion-tab [root]="guaguaRoot" tabTitle="Guagua" tabIcon="information-circle"></ion-tab> -->
+  <ion-tab *ngFor="let tab of pages" [root]="tab.componente"
+  [tabTitle]="tab.title" [tabIcon]="tab.icono" [show]="tab.mostrar"></ion-tab>
+</ion-tabs>
