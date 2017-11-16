@@ -1,3 +1,4 @@
+import { InglesPage } from './../pages/ingles/ingles';
 import { AlemanPage } from './../pages/aleman/aleman';
 import { Component,ViewChild } from '@angular/core';
 import { Nav,Platform } from 'ionic-angular';
@@ -11,7 +12,7 @@ import { HomePage } from '../pages/home/home';
 export class MyApp {
   // el control de nagegacion para el arranque de la aplicacion
   @ViewChild(Nav) nav: Nav;
-  rootPage:any = AlemanPage;
+  rootPage:any = InglesPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -29,6 +30,9 @@ export class MyApp {
   }
   abrirHome(){
     this.nav.setRoot(HomePage);
+  }
+  abrirIngles(){
+    this.nav.setRoot(InglesPage);
   }
 }
 

@@ -1,3 +1,4 @@
+import { InglesPage } from './../pages/ingles/ingles';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -11,7 +12,7 @@ import { AlemanPage } from '../pages/aleman/aleman';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,AlemanPage
+    HomePage,AlemanPage,InglesPage
   ],
   imports: [
     BrowserModule,
@@ -20,7 +21,7 @@ import { AlemanPage } from '../pages/aleman/aleman';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,AlemanPage
+    HomePage,AlemanPage,InglesPage
   ],
   providers: [
     StatusBar,

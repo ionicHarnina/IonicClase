@@ -14,5 +14,12 @@
 
 
 <ion-content padding>
-
+  <button ion-button (click)="presentAlert()">Arranca Alerta</button>
+  <button ion-button (click)="presentAlertConfirmation()">Arranca Confirmacion</button>
+  <ion-label *ngIf="confirmation">Hemos confiramdo</ion-label>
+  <button ion-button (click)="presentAlertPrompt()">Arranca Confirmacion</button>
+  <ion-label *ngIf="userCreated">Hemos confiramdo {{usuario|json}}</ion-label>
+  <button ion-button (click)="presentCheckAlert()">Arranca chequeo</button>
+  <button ion-button (click)="doRadio()">Arranca radio</button>
+  <ion-label>{{testRadioResult|json}}</ion-label>
 </ion-content>
