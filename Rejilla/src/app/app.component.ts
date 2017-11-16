@@ -1,17 +1,19 @@
+import { SegundaPage } from './../pages/segunda/segunda';
 import { PrimeraPage } from './../pages/primera/primera';
-import { Component,ViewChild } from '@angular/core';
-import { Nav,Platform } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { TerceraPage } from '../pages/tercera/tercera';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = PrimeraPage;
+  rootPage: any = TerceraPage;
   @ViewChild(Nav) nav: Nav;
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{ title: string, component: any }>;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -20,7 +22,10 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
-    this.pages=[{title:"primera",component:PrimeraPage}]
+
+    this.pages = [{ title: "primera", component: PrimeraPage },
+    { title: "segunda", component: SegundaPage },
+    { title: "tercera", component: TerceraPage }]
   }
   openPage(page) {
     // Reset the content nav to have just this page
