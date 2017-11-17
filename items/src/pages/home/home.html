@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>
+      Yo soy la cabecera
+    </ion-list-header>
+    <ion-item>
+      nombre:
+      <input type="text">
+    </ion-item>
+    <ion-item-sliding>
+      <ion-item>Cancelar
+        <ion-icon name="wifi" item-end></ion-icon>
+      </ion-item>
+      <ion-item-options>
+        <button> Aceptar</button>
+        <button> Cancelar</button>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-divider>
+      Item Divider
+    </ion-item-divider>
+    <button ion-item detail-none (click)="buttonClick()">
+      Button Item with no Detail Arrow
+    </button>
+    <ion-item detail-push>
+      Item with Detail Arrow
+    </ion-item>
+    <ion-item no-lines>
+        Item with no border
+      </ion-item>
+      <ion-item text-wrap>
+          Multiline text that should wrap when it is too long to fit on one line in the item.
+        </ion-item>
+        <ion-item>
+            Item
+            <button ion-button item-start (click)="buttonClick()">Button</button>
+            <button ion-button outline disabled >Outline</button>
+            <button ion-button outline item-end (click)="buttonClick()">Outline</button>
+        </ion-item>
+  </ion-list>
+  <!-- el deslizable no funciona fuera de una lista -->
+  <ion-item-sliding>
+    <ion-item>Cancelar
+      <ion-icon name="wifi" item-end></ion-icon>
+    </ion-item>
+    <ion-item-options>
+      <button> Aceptar</button>
+      <button> Cancelar</button>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-content>

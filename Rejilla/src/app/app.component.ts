@@ -7,11 +7,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { TerceraPage } from '../pages/tercera/tercera';
+import { CuartaPage } from '../pages/cuarta/cuarta';
+import { QuintaPage } from '../pages/quinta/quinta';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage: any = TerceraPage;
+  rootPage: any = QuintaPage;
   @ViewChild(Nav) nav: Nav;
   pages: Array<{ title: string, component: any }>;
 
